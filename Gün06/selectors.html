@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +10,23 @@
             text-transform: uppercase;
             letter-spacing: 5px;
         }
+
         /* class */
         .favori {
             border-left: 10px solid #007AFF;
         }
+
         /* id */
-        #memleket{
+        #memleket {
             text-align: center;
         }
+
         /* Batuhana özel */
         #memleket::after {
             content: " (OTOPARK)";
             font-weight: bold;
         }
+
         /* immediate child */
         div>p {
             margin: 0 70px;
@@ -32,25 +37,32 @@
         div p {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
-        h1, h2{
+
+        h1,
+        h2 {
             background-color: black;
             color: white;
-            
+
         }
+
         /* attribute */
         [title] {
             background-color: yellow;
         }
+
         li[title] {
             font-style: italic;
         }
+
         h2+p {
             text-indent: 40px;
         }
+
         /* odd ya da 2n+1 tek sayıları seçer */
         li:nth-child(odd) {
             background-color: gainsboro;
         }
+
         /* 6. Çocuk nasıl seçilir. */
         li:nth-child(6) {
             text-transform: uppercase;
@@ -64,21 +76,30 @@
         }
     </style>
 </head>
+
 <body>
     <h1>Türkiye</h1>
     <h2>Kütahya</h2>
     <p>
-        Kütahya (Latince: Cotyaeum), Ege Bölgesi'nde yer alan Kütahya ilinin merkezi olan şehirdir. Kütahya bölgesi, kuzey ve batıdaki yüksek dağ sırtlarında doruğa ulaşan tarım arazileri ile geniş bir yamaç alanına sahiptir.
+        Kütahya (Latince: Cotyaeum), Ege Bölgesi'nde yer alan Kütahya ilinin merkezi olan şehirdir. Kütahya bölgesi,
+        kuzey ve batıdaki yüksek dağ sırtlarında doruğa ulaşan tarım arazileri ile geniş bir yamaç alanına sahiptir.
     </p>
     <p>
-        Kuruluş tarihi kesin olarak tespit edilememekle beraber, tarihi MÖ 3000 yıllarına uzanmaktadır. Eski kaynaklara göre, Kütahya'nın antik çağlardaki adı Kotiaeon, Cotiaeum ve Koti şeklinde geçmektedir. İl topraklarına yerleşen en eski halk Friglerdir.
+        Kuruluş tarihi kesin olarak tespit edilememekle beraber, tarihi MÖ 3000 yıllarına uzanmaktadır. Eski kaynaklara
+        göre, Kütahya'nın antik çağlardaki adı Kotiaeon, Cotiaeum ve Koti şeklinde geçmektedir. İl topraklarına yerleşen
+        en eski halk Friglerdir.
     </p>
     <div>
         <p>
-            Kütahya, toplamda 11.632 kilometrekarelik bir alana yayılmıştır. Bu geniş alan, şehrin ormanlar, dağlar, akarsular ve termal kaynaklar gibi çeşitli doğal güzellikleri içinde barındırmasını sağlar.Kütahya, toplamda 11.632 kilometrekarelik bir alana yayılmıştır. Bu geniş alan, şehrin ormanlar, dağlar, akarsular ve termal kaynaklar gibi çeşitli doğal güzellikleri içinde barındırmasını sağlar.
+            Kütahya, toplamda 11.632 kilometrekarelik bir alana yayılmıştır. Bu geniş alan, şehrin ormanlar, dağlar,
+            akarsular ve termal kaynaklar gibi çeşitli doğal güzellikleri içinde barındırmasını sağlar.Kütahya, toplamda
+            11.632 kilometrekarelik bir alana yayılmıştır. Bu geniş alan, şehrin ormanlar, dağlar, akarsular ve termal
+            kaynaklar gibi çeşitli doğal güzellikleri içinde barındırmasını sağlar.
         </p>
         <section>
-            <p>Kütahya <span title="Beyaz kil bir gövdenin yüksek sıcaklıklarda pişirilmesiyle yapılan bir seramik türüdür.">personel</span> sunar...</p>
+            <p>Kütahya <span
+                    title="Beyaz kil bir gövdenin yüksek sıcaklıklarda pişirilmesiyle yapılan bir seramik türüdür.">personel</span>
+                sunar...</p>
         </section>
     </div>
     <h3>İlçeleri</h3>
@@ -98,4 +119,5 @@
         <li id="memleket" class="favori">Tavşanlı</li>
     </ul>
 </body>
+
 </html>
