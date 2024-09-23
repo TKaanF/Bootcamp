@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Öğreniyorum</h1>
+    <p><!-- Buranın içini js ile değiştirebilir miyiz? --></p>
+
+    <script>
+        /* Burası javascript bölgesi */
+
+        // javascriptte html dökümanına karşılık gelen
+        // Document adında bir nesne vardır (Çizim yaparken
+        // herşeyin başı olarak DOM ağacının tepesinde gösterdik)
+        // Document nesnesi üzerinden mecbut sayfadaki dokümanın 
+        // Tüm elementlerine erişebiliriz (Belirli yöntemlerle)
+
+        // sayfadaki ilk p elementine eriş ve içindeki metni değiştir.
+
+        /* nesneleri değişkenlerle taşıyabiliriz */
+        let ilkParag = document.querySelector ("p");
+
+        /* nesnelerin özelliklerine . operatörü ile erişiriz */
+        /* = operatörü ile yeni değerler veririz */
+        ilkParag.textContent = "Biz kimseyi yarı yolda bırakmadık onlar müsait bir yerde indiler... -Bir Kamyon Arkası Sözü";
+
+        /*  Elementin özelliiklerini özelliklerine erişip değiştirebiliriz */
+        ilkParag.style.color = "purple"
+
+        /* DOM ağacının ilk dallarından biri olan body'e bu şekilde erişebiliriz */
+        document.body.style.background = "linear-gradient(to right,orange, white)";
+
+        // Programlama:
+        // Komutların Belli sırada belirli bir aöaç içim çalıştırılması
+        // Komutlar insan dilini yakın bi dille
+        // Bilgisayarda iş yapması için fısıldamaktadır
+        // alert("Hoooooop ... palaaa!!!");
+        // alert("Hoşgeldin :)")
+        // Alert metodu uyarı anlamına geliyor.
+    </script>
+</body>
+</html>
