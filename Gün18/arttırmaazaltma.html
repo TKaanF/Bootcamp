@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment & Decrement</title>
+</head>
+
+<body>
+    <script src="../Ortak/yaz.js"></script>
+    <script>
+        let a = 1;
+        a++; //
+        ciz(a);
+
+        let b = 1;
+        ciz(b++ * 3); //
+        ciz(b);
+
+        let c = 5;
+        ciz(c++);
+        ciz(c);
+
+        let d = 3;
+        ciz(d++ * d);
+
+        let e = 3;
+        ciz(++e * e);
+
+        let f = 10;
+        ciz(f-- + --f);
+
+        let g = 3
+        ciz(++g - g--);
+        ciz(g);
+
+        let h = 4;
+        h = h++;
+        ciz(h);
+
+        let i = 7;
+        i = ++i;
+        ciz(i);
+
+        temizle();
+        let j = 5;
+        j *= j++;  // j= j * j++
+        ciz(j);
+
+        let k = 0;
+        yaz(k++ - --k);
+        ciz(k);
+
+        let l = 3;
+        l = l + l * l++;
+        yaz(l);
+
+        let m = 2;
+        m = m * (m + ++m);
+        ciz(m);
+
+        // ("||" veya demek) ("&&" ve demek)
+
+        let n = 3;
+        let sonuc = n++ == 3 || ++n == 5;
+        yaz(sonuc);
+        ciz(n);
+
+        let o = 40;
+        yaz(o < 39 && ++o == 40)
+        ciz(o);
+
+        let p = 2;
+        if (++p == p++)
+        yaz(p);
+
+        //
+        //
+        //
+
+    </script>
+</body>
+
+</html>
